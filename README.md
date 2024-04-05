@@ -19,4 +19,4 @@ Contained in this repo are figures/analysis notebooks for each of the following 
 * IL2RA
     * IL2RA_Analysis.ipynb
 
-Sample data for the PTEN, FBXO11, and DQB1 experiments is located on [Zenodo]("https://zenodo.org/records/10932681"). 
+Sample data for the PTEN, FBXO11, and DQB1 experiments is located on [Zenodo](https://zenodo.org/records/10932681). 
