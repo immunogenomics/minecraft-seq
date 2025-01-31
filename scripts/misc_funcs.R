@@ -39,6 +39,26 @@ theme_pres <- function(base_size = 23){
     )
 }
 
+theme_clean <- function(base_size = 23){ 
+    theme_bw(base_size = base_size) + 
+    theme(
+        # If facetting, remove grey boxes
+        strip.background = element_blank(),
+
+        # Make axis components dark grey
+        panel.border = element_rect(color = 'grey46'), 
+        axis.text = element_text(color = 'grey46'),
+        
+        #text elements
+        plot.title = element_text(hjust = 0.5, # center title
+                                  size = (base_size + 2)), # increase title size
+        legend.title = element_text(face = 'italic'), # italics legend label
+        
+        panel.grid.major = element_blank(), panel.grid.minor = element_blank()
+    )
+}
+
+
 #Define theme_g() function, a theme_grey with better fonts
 theme_g <- function(base_size = 23){ 
     theme_grey(base_size = base_size) + 
@@ -586,7 +606,7 @@ read10x_mtx <- function(run, suffix, min_counts=1) {
     gene.loc <- list.files(run, pattern = 'features.tsv(.gz)?', full.names = TRUE)
     matrix.loc <- list.files(run, pattern = 'matrix.mtx(.gz)?', full.names = TRUE)
     
-    data <- readMM(file = matrix.loc) %>% as("dgCMatrix")# %>% Matrix::t()
+    data <- readMM(file = matrix.loc) %>% as("CsparseMatrix")# %>% Matrix::t()
     cell.names <- readLines(barcode.loc)
     cell.names <- gsub("-1$", "", cell.names)    
     
@@ -594,14 +614,20 @@ read10x_mtx <- function(run, suffix, min_counts=1) {
         cell.names <- paste(cell.names, suffix, sep = "_")
     }
     
-    gene.names <- fread(gene.loc, header = FALSE)$V2
+    genes = fread(gene.loc, header = FALSE)
+    if (ncol(genes)>1){
+        gene.names <- genes$V2
+    } else {
+        gene.names <- genes$V1
+    }    
+    
     row.names(data) <- gene.names
     colnames(data) <- cell.names
 
-    data <- as(data, "dgCMatrix")
+    data <- as(data, "CsparseMatrix")
     data <- data[, Matrix::colSums(data) >= min_counts]
     data <- data[which(!is.na(row.names(data))), ]
-    data <- as(sumOverRowNames(data), "dgCMatrix")
+    data <- as(sumOverRowNames(data), "CsparseMatrix")
     return(data)
 }
 
