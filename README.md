@@ -13,7 +13,7 @@ Contained in this repo are figures/analysis notebooks or scripts for each of the
 | PTPRC | Figure 3 | [PTPRC_Analysis.ipynb](./figures/PTPRC/PTPRC_Analysis.ipynb), [GSEA_PTPRC_IL2RA.ipynb](./figures/Misc/GSEA_PTPRC_IL2RA.ipynb)|
 | RPL8 | Figure 4 | [RPL8_Analysis.ipynb](./figures/RPL8/RPL8_Analysis.ipynb)|
 | IL2RA | Figure 4 | [IL2RA_Analysis.ipynb](./figures/IL2RA/IL2RA_Analysis.ipynb), [GSEA_PTPRC_IL2RA.ipynb](./figures/Misc/GSEA_PTPRC_IL2RA.ipynb)|
-| PAX5 | Figure 5 | |
+| PAX5 | Figure 5 | [PAX5_RNA_analysis.R](./figures/PAX5/PAX5_RNA_analysis.R), [PAX5_RNA_glmNB.R](./figures/PAX5/PAX5_RNA_glmNB.R), [PAX5_ADT_glmNB.R](./figures/PAX5/PAX5_ADT_glmNB.R)|
 | Misc |  | [Mixscape_Comparison_Latest.ipynb](./figures/Misc/Mixscape_Comparison_Latest.ipynb), [TotalAlignmentStats_Latest.ipynb](./figures/Misc/TotalAlignmentStats_Latest.ipynb)|
 
-Sample data for the PTEN, FBXO11, and DQB1 experiments is located on [Zenodo](https://zenodo.org/records/10932681). 
+Sample data for the PTEN, FBXO11, and DQB1 experiments is located on [Zenodo](https://zenodo.org/records/10932681).
