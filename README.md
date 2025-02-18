@@ -5,12 +5,12 @@ Contact: Yuriy Baglaenko yuriy.baglaenko@cchmc.org, Michelle Curtis curtism@broa
 
 Contained in this repo are figures/analysis notebooks or scripts for each of the following experiments.
 
-| Experiment  |  Figure # | Notebooks/Scripts |
-|--------|----------|----------|
-| PTEN  | Figure 1 | [PTEN_Analysis.ipynb](./figures/PTEN/PTEN_Analysis.ipynb) |
-| FBXO11 | Figure 2 | [FBXO11_Analysis.ipynb](./figures/FBXO11/FBXO11_Analysis.ipynb)|
-| DQB1 | Figure 2 | [DQB1_Analysis.ipynb](./figures/DQB1/DQB1_Heatmap.ipynb), [DQB1_Analysis.ipynb](./figures/DQB1/DQB1_Heatmap.ipynb)|
-| PTPRC | Figure 3 | [PTPRC_Analysis.ipynb](./figures/PTPRC/PTPRC_Analysis.ipynb), [GSEA_PTPRC_IL2RA.ipynb](./figures/Misc/GSEA_PTPRC_IL2RA.ipynb)|
+| Experiment  |  Figure # | Notebooks/Scripts | Notes |
+|--------|----------|----------|----------|
+| PTEN  | Figure 1 | [PTEN Notebook.ipynb](./figures/PTEN/PTEN_FBXO11_DQB1_Github.ipynb) | Joint Notebook with DQB1/FBXO11 |
+| FBXO11 | Figure 2 | [FBXO11_Run 1.ipynb](./figures/FBXO11/PTEN_FBXO11_DQB1_Analysis.ipynb),[FBXO11_Run 2 - Joint Analysis.ipynb](./figures/FBXO11/FBXO11_Run2_Joint_Github.ipynb)| Run 1 and Run 2 merged and analyzed together |
+| DQB1 | Figure 2 | [DQB1_Notebook.ipynb](./figures/DQB1/PTEN_FBXO11_DQB1_Github.ipynb), [DQB1_Heatmap.ipynb](./figures/DQB1/DQB1_Heatmap_Github.ipynb)| Heatmap and editing clustering done in a separate notebook |
+| PTPRC | Figure 3 | [PTPRC_Analysis.ipynb](./figures/PTPRC/PTPRC_Github.ipynb), [GSEA_PTPRC_IL2RA.ipynb](./figures/Misc/GSEA_PTPRC_IL2RA.ipynb), [Bootstrapping CD45 Data.ipynb](./figures/PTPRC/PTPRC_Analysis_Bootstrap_Laters.ipynb)| All PTRPC analysis|
 | RPL8 | Figure 4 | [RPL8_Analysis.ipynb](./figures/RPL8/RPL8_Analysis.ipynb)|
 | IL2RA | Figure 4 | [IL2RA_Analysis.ipynb](./figures/IL2RA/IL2RA_Analysis.ipynb), [GSEA_PTPRC_IL2RA.ipynb](./figures/Misc/GSEA_PTPRC_IL2RA.ipynb)|
 | PAX5 | Figure 5 | [PAX5_genotype_analysis.R](./figures/PAX5/PAX5_genotype_analysis.R), [PAX5_RNA_analysis.R](./figures/PAX5/PAX5_RNA_analysis.R), [PAX5_RNA_glmNB.R](./figures/PAX5/PAX5_RNA_glmNB.R), [PAX5_ADT_glmNB.R](./figures/PAX5/PAX5_ADT_glmNB.R)|
