@@ -1,7 +1,7 @@
 # minecraft-seq
 This repo provides code for the analysis of MINECRAFT-seq data corresponding to [Baglaenko, et al, biorxiv, 2024](https://www.biorxiv.org/content/10.1101/2024.03.28.587175v1).
 
-Contact: Yuriy Baglaenko ybaglaen@broadinstitute.org, Michelle Curtis curtism@broadinstitute.org
+Contact: Yuriy Baglaenko yuriy.baglaenko@cchmc.org, Michelle Curtis curtism@broadinstitute.org
 
 Contained in this repo are figures/analysis notebooks or scripts for each of the following experiments.
 
