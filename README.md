@@ -19,4 +19,4 @@ Contained in this repo are figures/analysis notebooks or scripts for each of the
 
 Sample data for the PTEN, FBXO11, and DQB1 experiments is located on [Zenodo](https://zenodo.org/records/10932681). GEO records are being generated to deposit count matrices with trimmed meta data. 
 
-File: DNA_filtering_Functions.R has updated function on allele calling and genotyping of single cell along with extra utility functions.
+File: [DNA Filtering Functions](./figures/DNA_filtering_Functions.R) has updated function on allele calling and genotyping of single cell along with extra utility functions.
