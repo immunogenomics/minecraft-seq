@@ -12,8 +12,11 @@ Contained in this repo are figures/analysis notebooks or scripts for each of the
 | DQB1 | Figure 2 | [DQB1_Notebook.ipynb](./figures/DQB1/PTEN_FBXO11_DQB1_Github.ipynb), [DQB1_Heatmap.ipynb](./figures/DQB1/DQB1_Heatmap_Github.ipynb)| Heatmap and editing clustering done in a separate notebook. CRISPR-Cas cutting and HDR. |
 | PTPRC | Figure 3 | [PTPRC_Notebook.ipynb](./figures/PTPRC/PTPRC_Github.ipynb), [GSEA_PTPRC_IL2RA.ipynb](./figures/Misc/GSEA_PTPRC_IL2RA.ipynb), [Bootstrapping CD45 Data.ipynb](./figures/PTPRC/PTPRC_Analysis_Bootstrap_Laters.ipynb)| All PTRPC analysis. Induction of ESC with CRISPR base editors|
 | RPL8 | Figure 4 | [RPL8_Notebook.ipynb](./figures/RPL8/RPL8_Github.ipynb)| RPL8 eQTL CRISPR base editing | 
-| IL2RA | Figure 4 | [IL2RA_Run 1.ipynb](./figures/IL2RA/IL2RA_Run1_Github.ipynb),[IL2RA_Run 2.ipynb](./figures/IL2RA/IL2RA_Run2_Github.ipynb), [IL2RA_Joint Analysis Notebook 2.ipynb](./figures/IL2RA/IL2RA_joint_Github.ipynb),[GSEA_PTPRC_IL2RA.ipynb](./figures/Misc/GSEA_PTPRC_IL2RA.ipynb)|
-| PAX5 | Figure 5 | [PAX5_genotype_analysis.R](./figures/PAX5/PAX5_genotype_analysis.R), [PAX5_RNA_analysis.R](./figures/PAX5/PAX5_RNA_analysis.R), [PAX5_RNA_glmNB.R](./figures/PAX5/PAX5_RNA_glmNB.R), [PAX5_ADT_glmNB.R](./figures/PAX5/PAX5_ADT_glmNB.R)|
-| Misc |  | [Mixscape_Comparison_Latest.ipynb](./figures/Misc/Mixscape_Comparison_Latest.ipynb), [TotalAlignmentStats_Latest.ipynb](./figures/Misc/TotalAlignmentStats_Latest.ipynb)|
+| IL2RA | Figure 4 | [IL2RA_Run 1.ipynb](./figures/IL2RA/IL2RA_Run1_Github.ipynb),[IL2RA_Run 2.ipynb](./figures/IL2RA/IL2RA_Run2_Github.ipynb), [IL2RA_Joint Analysis Notebook 2.ipynb](./figures/IL2RA/IL2RA_joint_Github.ipynb),[GSEA_PTPRC_IL2RA.ipynb](./figures/Misc/GSEA_PTPRC_IL2RA.ipynb)| CRISPR editing of IL2RA variant in Th1 and Treg polarized naive CD4 T cells
+| PAX5 | Figure 5 | [PAX5_genotype_analysis.R](./figures/PAX5/PAX5_genotype_analysis.R), [PAX5_RNA_analysis.R](./figures/PAX5/PAX5_RNA_analysis.R), [PAX5_RNA_glmNB.R](./figures/PAX5/PAX5_RNA_glmNB.R), [PAX5_ADT_glmNB.R](./figures/PAX5/PAX5_ADT_glmNB.R),  [PAX5_genotyping.ipynb](./figures/PAX5/PAX5_AlleleCalling_Github.ipynb)| PAX5 multiplexed editing with CRIPSR base editors |
+| Misc |  | [Mixscape_Comparison_Latest.ipynb](./figures/Misc/Mixscape_Comparison_Latest.ipynb), [TotalAlignmentStats_Latest.ipynb](./figures/Misc/TotalAlignmentStats_Latest.ipynb)| Extras|
+| Supplemental Note | |[Supplemental Note and Genotype Calling.ipynb](./figures/SupplementaryNote/SupplementaryNote_Github.ipynb) | Fully replicatable genotyping analysis. Key files deposited in folder | 
 
-Sample data for the PTEN, FBXO11, and DQB1 experiments is located on [Zenodo](https://zenodo.org/records/10932681).
+Sample data for the PTEN, FBXO11, and DQB1 experiments is located on [Zenodo](https://zenodo.org/records/10932681). GEO records are being generated. 
+
+File: DNA_filtering_Functions.R has updated function on allele calling and genotyping of single cell along with extra utility functions.
